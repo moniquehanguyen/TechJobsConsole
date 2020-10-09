@@ -68,9 +68,7 @@ namespace TechJobsConsole
             {
                 foreach (KeyValuePair<string, string> column in listing)
                 {
-                    string columnString = column.Value.ToLower();
-
-                    if (columnString.Contains(value.ToLower()))
+                    if (column.Value.ToLower().Contains(value.ToLower()))
                     {
                         if (!jobs.Contains(listing))
                         {
